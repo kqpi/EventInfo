@@ -1,5 +1,5 @@
-# PracaMedyczna
-Skrypt pisany w lua odpowiedzialny za dorywczą prace dla medycznych frakcji.
+# EventInfo
+Skrypt pisany w lua odpowiedzialny za Informacje o eventach.
 
 
 Prezentacja Skryptu - https://www.youtube.com/watch?v=p0NNRXKNwck
