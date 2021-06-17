@@ -126,32 +126,32 @@ function MenuWybierania()
         },
             function(data2, menu2)
                 if data2.current.value == 'event1' then
-					TriggerServerEvent("k_eventy:event1")
+			TriggerServerEvent("k_eventy:event1")
                     ESX.UI.Menu.CloseAll()
                 elseif data2.current.value == 'event2' then
-					TriggerServerEvent("k_eventy:event2")
+			TriggerServerEvent("k_eventy:event2")
                     ESX.UI.Menu.CloseAll()
-				elseif data2.current.value == 'customevent' then
-					ESX.UI.Menu.CloseAll()
-					ESX.UI.Menu.Open(
+			elseif data2.current.value == 'customevent' then
+				ESX.UI.Menu.CloseAll()
+				ESX.UI.Menu.Open(
           			'dialog', GetCurrentResourceName(), 'customevent_text',
           			{
             			title = "Wpisz Nazwe Eventu"
           			},
          			 function(data2, menu2)
             			local text = data2.value
-            			if text  == nil then
-            			    TriggerEvent('esx:showNotification', 'Wiadomość nie może być pusta!')
-            			else
-                			menu2.close()
-							TriggerServerEvent("k_eventy:customedevent", text)
-            			end
+            		if text  == nil then
+            		    TriggerEvent('esx:showNotification', 'Wiadomość nie może być pusta!')
+            		else
+                		menu2.close()
+				TriggerServerEvent("k_eventy:customedevent", text)
+            		end
 
-          			end,
-        			function(data2, menu2)
+          		end,
+        		function(data2, menu2)
             			menu2.close()
-        			end)
-        			end
+        		end)
+        	end
 
             end,
             function(data, menu)
